@@ -6,4 +6,5 @@ import com.vini.userdept.model.UserModel;
 
 public interface UserRepository extends JpaRepository<UserModel, Long> {
 
+    UserModel findByEmail(String email);
 }
